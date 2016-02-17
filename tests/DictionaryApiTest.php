@@ -22,7 +22,7 @@ class DictionaryApiTest extends PHPUnit_Framework_TestCase
 
         $resources_api = new \Systran\Client\DictionaryApi($this->api_client);
         $input = new \Systran\Client\Model\DictionaryAddBody();
-        $input->setDictionary(new \Systran\Client\Model\DictionaryAddInput([ "source_lang" => "en", "name" => "phpClientTest", "target_langs" => "fr","comments" => "this is a test for the php client library", "type" => ""]));
+        $input->setDictionary(new \Systran\Client\Model\DictionaryAddInput([ "source_lang" => "en", "name" => "phpClientTest", "target_langs" => "fr","comments" => "this is a test for the php client library", "type" => "UD"]));
         $this->dic_id = $resources_api->resourcesDictionaryAddPost($input)->getAdded()->getId();
         $this->assertNotNull($this->dic_id);
         return $this->dic_id;
