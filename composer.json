@@ -13,7 +13,7 @@
     "authors": [
         {
             "name": "Systran",
-            "homepage": ""
+            "homepage": "https://github.com/SYSTRAN/resources-api-php-client"
         }
     ],
     "require": {
